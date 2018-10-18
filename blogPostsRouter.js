@@ -60,11 +60,12 @@ router.put("/:id", jsonParser, (req, res) => {
         return res.status(400).send(message);
     }
     console.log(`Updating blog post \`${req.params.id}\``);
-    BlogPosts.update({
+    const updatedPost = BlogPosts.update({
         id: req.params.id,
         title: req.params.title,
         content: req.params.content,
-        author: req.params.author
+        author: req.params.author,
+        publishDate: req.body.publishDate
     });
     res.status(204).end();
 })
