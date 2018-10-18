@@ -1,15 +1,10 @@
 const express = require("express");
 const morgan = require("morgan");
 
+const blogPostsRouter = require("./blogPostsRouter");
 const app = express();
 
-const blogPostsRouter = require("/blogPostsRouter");
-
 app.use(morgan("common"));
-
-app.get("/", (req, res) => {
-    res.sendFile(__dirname);
-});
 
 app.use("/blog-posts", blogPostsRouter);
 
