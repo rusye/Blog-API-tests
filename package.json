@@ -1,0 +1,14 @@
+{
+  "name": "challenge-blog-api",
+  "version": "1.0.0",
+  "description": "My attempt at a blog api",
+  "main": "index.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
