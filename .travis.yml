@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: hkRMWFarwG/PJZs7rU5ae6lc0M0AniOKoilnvmAvPQvzmR6+t78IV9hya8pF48DA8E8WA7Qh+cjunYbqJ08FrzTyu3qwfqpGK2jICn6eEmjQ0wIoY77GipfOGA8pGnPU5PHkqxUo64nkofddcI8LI9uPaMYWmiwYFFr20PHYfQvq64e67Ik3siAs8JItLt4zcWEy+SbxwQJJ0Wu4PJLLU+JwPzHxl90GMOBbp2NK6wy6PsJ3BYxddPqOqBWo4JzvOeqy6gXKWMOqGZf1PpWwJpnufEsyiFz8rMlCZ97OrXY7H18PRbvyQ3fQUmW0grcCoqL3bcCxqX2JGw3sxzaZF9cjTuatpVyni0yXVMhyVFQyPlDx02mM3C+SU72Tb/ZiTARQSNPL/3opKday9jjUSnm8wFRqfXJBFHTiQwdgX1I30shv3cj8Mj6kBGji3OpyXHyJv+czMxiABeJd5JlgfzvyIlRbcymHT9+/4cGSDkMz2SF42qGhDjk7ijgccyF5CbVT7+Bb2i9WKARiBNwqDJEO+9ffysj1Ptg6JGdKDFo7iH/p0+lfQ+plNYflxJ/fwhWc3uTK17gaNAYl2J6Rzoml/l4mvmVTEE1nnVxrnhJk+hJDNqpBfXrGDEQmVjQRIEkPGiOrdbp2rxiEHDcNmhQpfTWp9rymHCGTqz9FH48=
+  app: Blog-API-tests
+  on:
+    repo: rusye/Blog-API-tests
